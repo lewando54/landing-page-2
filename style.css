@@ -370,15 +370,53 @@ nav{
 
 .services-tile-section{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .service-tile{
-    box-shadow: 0 0 35px var(--lightgray);
-    padding: 1rem;
+    position: relative;
+    width: 24rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 45px var(--lightgray);
     border-radius: 1rem;
-    width: 21rem;
+}
+
+.service-tile--content{
+    top: 0;
+    position: relative;
+    background-color: white;
+    z-index: 99999;
+    padding: 1rem 2rem;
+    width: 24rem;
+    border-radius: 1rem;
+    transition: transform 0.2s;
+}
+
+.service-tile .backdrop{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-65deg, #6b2c94,#fc01fd);
+    border-radius: 1rem;
+}
+
+.service-tile:hover .service-tile--content{
+    transform: translateX(-0.5rem) translateY(-0.5rem);
+}
+
+.service-tile h3{
+    font-size: 22px;
+    margin: 0;
+}
+
+.service-tile p{
+    line-height: 1.5;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
 }
