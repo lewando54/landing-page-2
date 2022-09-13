@@ -344,6 +344,7 @@ nav{
 .hero-section--buttons button i{
     background: linear-gradient(-45deg,#6b2c94 32%,#fc01fd 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-right: 5px;
     font-size: 20px;
