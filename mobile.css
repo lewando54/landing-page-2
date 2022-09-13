@@ -137,12 +137,38 @@
     }
 
     .service-tile{
-        width: 50rem;
+        width: 90%;
+    }
+
+    .service-tile--content{
+        width: 100%;
+    }
+
+    .service-tile .backdrop{
+        width: 100%;
     }
 
     .hero-section--laptop-photo img{
         position: initial;
         width: 100%;
+    }
+
+    .text-with-image-sections-wrapper{
+        align-items: center;
+    }
+
+    .text-with-image--image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-with-image{
+        flex-direction: column;
+    }
+
+    .text-with-image__reverse{
+        flex-direction: column-reverse;
     }
 }
 

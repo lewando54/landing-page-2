@@ -420,3 +420,117 @@ nav{
     color: #666;
     font-family: 'Roboto', sans-serif;
 }
+
+.want-to-download-app a{
+    color: #353535;
+}
+
+.fancy-link a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+.fancy-link a::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: dodgerblue;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: clip-path 0.4s ease-in-out;
+}
+
+.fancy-link a::before{
+    content: '';
+    position: absolute;
+    right: -4rem;
+    top: 3px;
+    width: 1.25rem;
+    height: 1rem;
+    background: linear-gradient(-45deg,#6b2c94 32%,#fc01fd 100%);
+    clip-path: polygon(0 40%, 70% 40%, 70% 20%, 100% 50%, 70% 80%, 70% 60%, 0 60%);
+    opacity: 0;
+    transition: right 0.4s ease-in-out 0.2s, opacity 0.4s ease-in-out 0.2s;
+}
+
+.fancy-link a:hover::after{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.fancy-link a:hover::before{
+    right: -2rem;
+    opacity: 1;
+}
+
+.text-with-image-sections-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 11%;
+    margin: 6rem 0;
+    width: 110%;
+    gap: 6rem;
+    background-color: #EBEDF2;
+    background-image: url('img/ashapemix.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.text-with-image{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+}
+
+.text-with-image__reverse{
+    flex-direction: row-reverse;
+}
+
+.text-with-image--icon{
+    background-color: var(--darkviolet);
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-with-image--icon svg{
+    width: 3em;
+    fill: white;
+}
+
+.text-with-image h3{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.text-with-image p{
+    color: #353535;
+    font-family: "Roboto", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 0;
+}
+
+.text-with-image .fancy-link a{
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.text-with-image--image{
+    width: 100%;
+}
+
+.text-with-image img{
+    max-width: 100%;
+}
