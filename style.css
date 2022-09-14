@@ -26,6 +26,7 @@ html, body{
     width: 100%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 0 1rem;
     position: relative;
 }
@@ -469,10 +470,10 @@ nav{
 .text-with-image-sections-wrapper{
     display: flex;
     flex-direction: column;
-    padding: 6rem 11%;
+    position: relative;
+    padding: 6rem 10rem;
     margin: 6rem 0;
     width: 110%;
-    gap: 6rem;
     background-color: #EBEDF2;
     background-image: url('img/ashapemix.png');
     background-position: center right;
@@ -482,7 +483,11 @@ nav{
 .text-with-image{
     display: flex;
     flex-direction: row;
-    gap: 6rem;
+    justify-content: center;
+}
+
+.text-with-image--text{
+    width: 100%;
 }
 
 .text-with-image__reverse{
