@@ -471,7 +471,7 @@ nav{
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 6rem 10rem;
+    padding: 6rem 8rem;
     margin: 6rem 0;
     width: 110%;
     background-color: #EBEDF2;
@@ -483,7 +483,7 @@ nav{
 .text-with-image{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .text-with-image--text{
@@ -538,4 +538,112 @@ nav{
 
 .text-with-image img{
     max-width: 100%;
+}
+
+.our-awesome-features{
+    display: flex;
+    align-items: center;
+}
+
+.our-awesome-features .medium-heading{
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+.our-awesome-features--right h3{
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.our-awesome-features--left, .our-awesome-features--right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.our-awesome-features--feature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.our-awesome-features--feature:hover{
+    box-shadow: 0 0 55px var(--lightgray);
+    transform: translateX(2rem);
+}
+
+.feature--icon__green{
+    --icon-color: #049507;
+    --icon-bg-color: #d9f3de;
+}
+
+.feature--icon__violet{
+    --icon-color: #6c2b95;
+    --icon-bg-color: #e1e1f5;
+}
+
+.feature--icon__pink{
+    --icon-color: #d912dc;
+    --icon-bg-color: #ebdcf4;
+}
+
+.our-awesome-features--feature::after{
+    content: '';
+    position: absolute;
+    background-color: var(--icon-color);
+    transform-origin: center;
+    top: 32%;
+    left: 0;
+    width: 5px;
+    height: 4rem;
+    transform: scaleY(0);
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.our-awesome-features--feature:hover::after{
+    transform: scaleY(1);
+}
+
+.feature--icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--icon-color);
+    background-color: var(--icon-bg-color);
+    box-shadow: 0 0 0 5px white, 0 0 0 10px var(--icon-bg-color);
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+}
+
+.feature--text p{
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: "Roboto";
+    color: #54595F;
+    margin-top: 0;
+}
+
+.feature--text{
+    width: 80%;
+}
+
+.secondary-text{
+    color: #353535;
+    font-family: "Roboto", Sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
 }

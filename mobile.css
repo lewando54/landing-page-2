@@ -170,6 +170,15 @@
     .text-with-image__reverse{
         flex-direction: column-reverse;
     }
+
+    .our-awesome-features{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .our-awesome-features--left, .our-awesome-features--right{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 767px) {
