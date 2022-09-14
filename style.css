@@ -647,3 +647,23 @@ nav{
     font-weight: 400;
     line-height: 27px;
 }
+
+.use-the-tool{
+    display: flex;
+    align-items: center;
+}
+
+.use-the-tool .medium-heading{
+    padding: 18px 0px 18px 0px;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.use-the-tool p{
+    margin: 0;
+}
+
+.use-the-tool--left img{
+    height: 40%;
+}
